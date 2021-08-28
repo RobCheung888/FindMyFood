@@ -46,26 +46,34 @@
         <label for="image_restuarant">Your company Image: </label>
         <input type="file" class="input_main" accept="image/*"><br>
 
-        <br><button type="button" class="button_main" onclick="restaurant_tag(tag)">Submit</button>
+       
 
-        <script type="text/javascript">
+        
 
-          localStorage.setItem("restaurantname",name);
-          function restaurant_tag(tag){
-            var name_r = document.getElementById('name').value;
-            
-            
-            alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
-            window.location.href ="/profile/your_restaurants.html";
 
-            //for(let i = 0; i < tags_r.length(); i++){
-              //console.log(tags_r);
-            //}
-            
-          }
+<br><button type="button" class="button_main" onclick="restaurant_tag(tag)">Submit</button>
 
-          
-          </script>
+<script type="text/javascript">
+
+  localStorage.setItem("restaurantname",name);
+  function restaurant_tag(tag){
+    var name_r = document.getElementById('name').value;
+    
+    
+    alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
+    window.location.href ="/profile/your_restaurants.html";
+
+    //for(let i = 0; i < tags_r.length(); i++){
+      //console.log(tags_r);
+    //}
+    
+  }
+
+  
+  </script>
+        
+        
+        
       </div>
     </div>
   </div>
