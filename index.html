@@ -10,26 +10,25 @@
 
     <div class="flex mainbar" style="justify-content:space-evenly">
       <div>
-        <img src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">
+        <button onclick="index.html"><img src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px"></button>
+        
         <img src="/img/FindMyFood_TextTransparent.png" alt="" id="logo">
       </div>
       <div style="width:min-content;text-align:right">
         <a href="/signin"><button type="button" name="button" id="AddRestaurant_Button" class="button_main">Add Your Restaurant</button></a>
-        <a href="/signin"><button type="button" name="button" id="SignIn_Button" class="button_main">   Sign In / Register  </button></a>
+        <a href="/signin" id="signinbtn"><button type="button" name="button" id="SignIn_Button" class="button_main">   Sign In / Register  </button></a>
       </div>
       <!--<a href="/signin"><button type="button" name="button" id="SignIn_Button">Sign In</button></a> -->
     </div>
 
     <!--<div id="mainbar_hr"></div>-->
+    
 
-    <div class="dropdown">
-      <button class="home" type="button" name="" ></button>
-
-
-    </div>
-
+    <div id="signintext"></div>
+    <button onclick="localStorage.setItem('lastname', 'Smith');alert('done')">set smith signin<button>
+    <a href="">reload</a>
+    <button onclick="localStorage.removeItem('lastname');alert('done')">clear signin</button>
+    <script src="/js/signin.js" defer></script>
 
   </body>
-
-  
 </html>
