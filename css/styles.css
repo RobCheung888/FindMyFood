@@ -1,0 +1,76 @@
+.mainbar{
+  width: 100%;
+  height: 282px;
+  left: -12px;
+  top: 0px;
+  
+  background-color: #B0FFE7;
+  }
+
+body{
+  background-color: #E6FFE3;
+  font-family: 'Agency FB Bold', arial;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    border-left-width: 0px;
+
+}
+
+
+#mainbar_name {
+  color: black;
+}
+
+#SignInButton {
+
+margin-left: 700px;;
+}
+
+#mainbar_name {
+
+}
+#mainbar_hr{
+ color: black;
+ border-style: dotted none none none;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+  border-top: 200px;
+  
+}
+
+#undertop{
+
+  background-color:#000000;
+  height:5px; width:100%;
+}
+
+#logobar{
+  position: absolute;
+  width: 352px;
+  height: 211px;
+  right: 900px;
+  top: 36px;
+}
+
+#logo{
+
+}
+
+#SignIn_Button {
+
+
+}
+
+.button_main {
+  margin:8px;
+  background-color:#14847D;
+  border:0;
+  padding:1em 2em;
+  border-radius:2em;
+  color:white;
+  white-space:pre;
+  
+}
