@@ -56,15 +56,17 @@
           function restaurant_tag(tag){
             var name_r = document.getElementById('name').value;
             
-            
-            var tags_r = document.getElementById('tags').value;
-            alert("Your restaurant name is " + name_r + "/n" );
+           
+            alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
+            window.location.href ="/profile/your_restaurants.html";
 
-            for(let i = 0; i < tags_r.length(); i++){
-              console.log(tags_r);
-            }
+            //for(let i = 0; i < tags_r.length(); i++){
+              //console.log(tags_r);
+            //}
             
           }
+
+          
           </script>
       </div>
     </div>
