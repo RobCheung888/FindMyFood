@@ -54,19 +54,3 @@ margin-left: 700px;;
 
 }
 
-.button_main {
-  margin:0.5em;
-  background-color:#14847D;
-  border:0;
-  padding:1em 2em;
-  border-radius:2em;
-  color:white;
-  white-space:pre;
-  cursor:pointer;
-  transition-duration: 0.1s;
-}
-
-.button_main:hover{background-color:#24948D}
-
-.button_main:hover:active{transform:scale(0.975)}
-
