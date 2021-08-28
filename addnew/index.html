@@ -28,11 +28,7 @@
         <input type="text" class="input_main" id="tag"><br>
         
 
-        <script type="text/javascript">
-        function restaurant_tag(tag){
-          console.log(tag);
-        }
-        </script>
+        
 
 
         <label for="address">Address: </label>
@@ -53,10 +49,12 @@
         <br><button type="button" class="button_main" onclick="restaurant_tag(tag)">Submit</button>
 
         <script type="text/javascript">
+
+          localStorage.setItem("restaurantname",name);
           function restaurant_tag(tag){
             var name_r = document.getElementById('name').value;
             
-           
+            
             alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
             window.location.href ="/profile/your_restaurants.html";
 

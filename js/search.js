@@ -95,7 +95,7 @@ function autocomplete(inp, arr) {
   });
   } 
 
-  var countries = ['pizza', 'noodles', 'chinese', 'italian', 'sushi', 'mexican', 'tacos', 'cake', 'hamburger', 'fastfood', 'american', 'indian', 'sit-down restaurants','thai']
+  var countries = ['pizza', 'noodles', 'chinese', 'italian', 'sushi', 'mexican', 'tacos', 'cake', 'hamburger', 'american', 'indian','thai']
   autocomplete(document.getElementById("myInput"), countries);
 
   var countriesX = ['Markham, Ontario', 'Downtown Toronto, Ontario', 'Kowloon Tong, Hong Kong', 'Sanford, Florida, US', 'Taipei', 'Tokyo']

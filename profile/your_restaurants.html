@@ -30,6 +30,17 @@
     <script src="/js/signin.js" defer></script>
 
     <h1>Your Restaurants: </h1>
+    <script type="text/javascript")>
+      
+      var name_r = decodeURIComponent(window.location.search);
+      name_r = name_r.substring(1);
+      var restr = name_r.split("&");
+      for (var i = 0; i < restr.length; i++)
+      {
+        document.write(restr[i] + "<br>");
+      }
+      console.log(name_r);
+    </script>
 
     
 </body>
