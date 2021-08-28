@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Home | Find My Food</title>
+    <link rel="stylesheet" href="/css/search.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/styles.css">
   </head>
@@ -10,7 +11,6 @@
 
     <div class="flex mainbar" style="justify-content:space-evenly">
       <div id="signintext" style="right:10%; "></div>
-    <script src="/js/signin.js" defer></script>
       <div>
         <img src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">
         
@@ -26,9 +26,18 @@
 
     <!--<div id="mainbar_hr"></div>-->
     
+    <div class="flex autocomplete" style="justify-content:center">
+        <input id="myInput" type="text" name="myCountry" placeholder="What food do you like?">
+        <input id="myInput2" type="text" name="myLocation" placeholder="Where are you at?">
+        <input type="submit">
+    </div>
+
     <!--
     <div id="signintext" style="right:10%; "></div>
     <script src="/js/signin.js" defer></script>
     -->
+
+    <script src="/js/signin.js" defer></script>
+    <script src="/js/search.js" defer></script>
   </body>
 </html>

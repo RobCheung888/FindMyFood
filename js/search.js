@@ -95,5 +95,8 @@ function autocomplete(inp, arr) {
   });
   } 
 
-  var countries = []
+  var countries = ['pizza', 'noodle', 'nnn', 'ppp']
   autocomplete(document.getElementById("myInput"), countries);
+
+  var countriesX = ['Florida', 'Ontario', 'Hong Kong', 'Taipei', 'Tokyo']
+  autocomplete(document.getElementById("myInput2"), countriesX);
