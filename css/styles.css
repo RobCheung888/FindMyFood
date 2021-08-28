@@ -5,7 +5,7 @@
   }
 
 body{
-  background-color: #E6FFE3;
+  background-color: #F5E9A9;
   font-family: 'Agency FB Bold', arial;
 
     border-left-width: 0px;
@@ -70,6 +70,3 @@ margin-left: 700px;;
 
 .button_main:hover:active{transform:scale(0.975)}
 
-button:hover{
-  background-
-}
