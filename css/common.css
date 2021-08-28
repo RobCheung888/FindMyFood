@@ -1,6 +1,14 @@
-body{margin:0;-webkit-text-size-adjust:100%}
+body {
+    margin:0;
+    -webkit-text-size-adjust:100%
+}
 
-.flex{
+a {
+    text-decoration:none;
+    color: black;
+}
+
+.flex {
     display:flex;
     flex-flow:wrap;
     justify-content:space-between;
@@ -17,13 +25,13 @@ body{margin:0;-webkit-text-size-adjust:100%}
     white-space:pre;
     cursor:pointer;
     transition-duration: 0.1s;
-  }
+}
   
-  .button_main:hover{background-color:#24948D}
+.button_main:hover{background-color:#24948D}
   
-  .button_main:hover:active{transform:scale(0.975)}
+.button_main:hover:active{transform:scale(0.975)}
 
-  .input_main {
+.input_main {
       margin:0.25em 0.5em;
       padding:0.5em 1em;
       border-radius:0.5em;
@@ -31,6 +39,8 @@ body{margin:0;-webkit-text-size-adjust:100%}
       border:2px solid rgba(128,128,128,.3);
       transition-duration: 0.1s;
       outline:none;
-  }
+}
 
-  .input_main:hover{border-color:rgba(128,128,128,.5)}
+.input_main:hover{border-color:rgba(128,128,128,.5)}
+
+.hideOnload {display:none}

@@ -6,10 +6,7 @@
 
 body{
   background-color: #F5E9A9;
-  font-family: 'Agency FB Bold', arial;
-
-    border-left-width: 0px;
-
+  font-family: 'Agency FB Bold', 'AppleSDGothicNeo-Regular', 'PingFangHK-Regular', arial;
 }
 
 
@@ -54,3 +51,70 @@ margin-left: 700px;;
 
 }
 
+.tags{
+  color: none;
+}
+
+.covercard {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  align-items: unset;
+}
+
+.card {
+box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, .1);
+padding: 1em;
+border-radius: 1em;
+margin:1em;
+background-color: #f1f1f1;
+transition-duration: 0.1s;
+}
+
+.card:hover{box-shadow: 0 0.5em 1em rgba(0, 0, 0, .3)}
+
+.card > img {
+object-fit: cover;
+width: 24em;
+height: 13.5em;
+margin-bottom: 0.75em;
+}
+
+.card > h3 {
+  margin: 0 0.75em
+}
+
+.card > h5 {
+margin: 0.75em 0.5em 0 0.5em
+}
+
+.tagsWrp {
+  justify-content: flex-start;
+  margin:0.5em 0 0 0.5em;
+}
+
+.tags {
+  background-color:rgba(128,128,128,.2);
+  color:grey;
+    font-size: small;
+    font-weight: bold;
+    padding:0.5em;
+    border-radius:0.25em;
+    margin:0.25em;
+    user-select:none
+}
+
+@media (max-width:640px) {
+.covercard {
+    flex-wrap: wrap;
+    overflow-x: none;
+    align-items: unset;
+}
+
+.card{
+    margin: 0.5em 0;
+    border-radius: 0;
+    box-shadow:none;
+    width:100%;
+}
+}
