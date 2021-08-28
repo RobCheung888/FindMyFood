@@ -27,7 +27,10 @@ a {
     transition-duration: 0.1s;
 }
   
-.button_main:hover{background-color:#24948D}
+.button_main:hover{
+    background-color:#24948D;
+    box-shadow:0 0.25em 0.5em rgba(36,148,141,.3)
+}
   
 .button_main:hover:active{transform:scale(0.975)}
 
