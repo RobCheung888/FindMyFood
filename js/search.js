@@ -95,10 +95,10 @@ function autocomplete(inp, arr) {
   });
   } 
 
-  var countries = ['#pizza', '#noodle', '#Chinese', '#Italian', '#Sushi', '#Mexican', '#Taco', '#Cake', '#Hamburger', '#Fastfood', '#American']
+  var countries = ['pizza', 'noodles', 'chinese', 'italian', 'sushi', 'mexican', 'tacos', 'cake', 'hamburger', 'fastfood', 'american', 'indian', 'sit-down restaurants','thai']
   autocomplete(document.getElementById("myInput"), countries);
 
-  var countriesX = ['Markham, Ontario', 'Downtown Toronto, Ontario', 'Kowloon Tong, Hong Kong', 'Sandford, Florida, US', 'Taipei', 'Tokyo']
+  var countriesX = ['Markham, Ontario', 'Downtown Toronto, Ontario', 'Kowloon Tong, Hong Kong', 'Sanford, Florida, US', 'Taipei', 'Tokyo']
   autocomplete(document.getElementById("myInput2"), countriesX);
 
   //https://www.w3schools.com/howto/howto_js_autocomplete.asp

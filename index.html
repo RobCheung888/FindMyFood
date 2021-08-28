@@ -1,100 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home | Find My Food</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/search.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
-  <body>
 
-    <div class="flex mainbar">
-      <div>
-        <a href="/">
-          <img title="Return to Home" src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">        
-          <img src="/img/FindMyFood_TextTransparent.png" alt="" id="logo">
-        </a>
-      </div>
-      <div style="width:min-content;text-align:right">
-        <a href="/addnew" id="addrestbtn" class="hideOnload"><button type="button" name="button" id="AddRestaurant_Button" class="button_main">Add Your Restaurant</button></a>
-        <a href="/signin" id="signinbtn" class="hideOnload"><button type="button" name="button" id="SignIn_Button" class="button_main">Sign In / Register</button></a>
-        <div class="flex" style="width:max-content">
-          <div id="signintext" style="font-weight:bold;font-size:small;opacity:0.5"></div>
-          <button type="button" id="signoutbtn" class="button_main hideOnload" onclick="localStorage.removeItem('lastname');refreshSignin()">Sign Out</button>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Home | Find My Food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/search.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+  <div class="flex mainbar">
+    <div>
+      <a href="/">
+        <img title="Return to Home" src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">
+        <img src="/img/FindMyFood_TextTransparent.png" alt="" id="logo">
+      </a>
+    </div>
+    <div style="width:min-content;text-align:right">
+      <a href="/addnew" id="addrestbtn" class="hideOnload"><button type="button" name="button" id="AddRestaurant_Button"
+          class="button_main">Add Your Restaurant</button></a>
+      <a href="/signin" id="signinbtn" class="hideOnload"><button type="button" name="button" id="SignIn_Button"
+          class="button_main">Sign In / Register</button></a>
+      <div class="flex" style="width:max-content">
+        <div id="signintext" style="font-weight:bold;font-size:small;opacity:0.5"></div>
+        <button type="button" id="signoutbtn" class="button_main hideOnload"
+          onclick="localStorage.removeItem('lastname');refreshSignin()">Sign Out</button>
       </div>
     </div>
+  </div>
 
-    <!--<div id="mainbar_hr"></div>-->
-    
-    <div class="flex autocomplete" style="justify-content:center">
-        <div class="autocomplete">
-        <input id="myInput" type="text" name="myCountry" placeholder="What food do you like?">
-        </div><div class="autocomplete">
-        <input id="myInput2" type="text" name="myLocation" placeholder="Where are you?">
-        </div><input class="button_main" type="submit">
+  <!--<div id="mainbar_hr"></div>-->
+
+  <div class="flex autocomplete" style="justify-content:center">
+    <div class="autocomplete">
+      <input id="myInput" type="text" name="myCountry" placeholder="What food do you like?">
     </div>
+    <div class="autocomplete">
+      <input id="myInput2" type="text" name="myLocation" placeholder="Where are you?">
+    </div><input class="button_main" type="submit">
+  </div>
 
-    <h1 style="margin:0.25em 1em;text-align:center">Today's Recommendations</h1>
+  <h1 style="margin:0.25em 1em;text-align:center">Today's Recommendations</h1>
 
-    <div class="flex covercard">
-      
-      <a href="/restaurants/nino_x_home_page.html">
+  <div class="flex covercard">
+
+    <a href="/restaurants/nino_x_home_page.html">
       <div class="card">
-        <img src="/img/cover_pizza.jpg">      
+        <img src="/img/cover_pizza.jpg">
         <h3>NinoX Bakery</h3>
         <div class="flex tagsWrp">
-          <div hidden class="tags">#Pizza</div>
-          <div hidden class="tags">#Bakery</div>
+          <div class="tags">Pizza</div>
+          <div class="tags">Bakery</div>
         </div>
         <h5>🕙 Open til 7:00pm</h5>
         <h5>📱 1-800-69-27753<h5>
       </div>
     </a>
-      
-      <div class="card">
-        <img src="/img/cover_india.jpg">
-        <h3>Little India Restaurant</h3>
-        <div class="flex tagsWrp">
-        </div>
-        <h5>🕙 Open til 7:30pm</h5>
-        <h5>📱 1-800-69-27753</h5>
-      </div>
 
-      <div class="card">
-        <img src="/img/cover_japan.jpg">
-        <h3>SHINOBU</h3>
-        <div class="flex tagsWrp">
-        </div>
-        <h5>🕙 Open til 9:00pm</h5>
-        <h5>📱 1-800-69-27753</h5>
+    <div class="card">
+      <img src="/img/cover_india.jpg">
+      <h3>Little India Restaurant</h3>
+      <div class="flex tagsWrp">
       </div>
-
-      <div class="card">
-        <img src="/img/cover_BrodflourBakkery.jpg">
-        <h3>Brodflour Bakkery</h3>
-        <div class="flex tagsWrp">
-        </div>
-        <h5>🕙 Open til 10:30pm</h5>
-        <h5>📱 1-800-69-27753</h5>
-      </div>
-
-      <div class="card">
-        <img src="/img/cover_bonjourbrioche.webp">
-        <h3>Bonjour Brioche Bakkery</h3>
-        <div class="flex tagsWrp">
-        </div>
-        <h5>🕙 Open til 11:30pm</h5>
-        <h5>📱 1-800-69-27753</h5>
-      </div>
-
-  
+      <h5>🕙 Open til 7:30pm</h5>
+      <h5>📱 1-800-69-27753</h5>
     </div>
 
-    <script src="/js/signin.js" defer></script>
-    <script src="/js/search.js" defer></script>
+    <div class="card">
+      <img src="/img/cover_japan.jpg">
+      <h3>SHINOBU</h3>
+      <div class="flex tagsWrp">
+      </div>
+      <h5>🕙 Open til 9:00pm</h5>
+      <h5>📱 1-800-69-27753</h5>
+    </div>
 
-  </body>
+    <div class="card">
+      <img src="/img/cover_BrodflourBakkery.jpg">
+      <h3>Brodflour Bakkery</h3>
+      <div class="flex tagsWrp">
+      </div>
+      <h5>🕙 Open til 10:30pm</h5>
+      <h5>📱 1-800-69-27753</h5>
+    </div>
+
+    <div class="card">
+      <img src="/img/cover_bonjourbrioche.webp">
+      <h3>Bonjour Brioche Bakkery</h3>
+      <div class="flex tagsWrp">
+      </div>
+      <h5>🕙 Open til 11:30pm</h5>
+      <h5>📱 1-800-69-27753</h5>
+    </div>
+
+
+  </div>
+
+  <script src="/js/signin.js" defer></script>
+  <script src="/js/search.js" defer></script>
+
+</body>
+
 </html>
