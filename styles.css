@@ -29,6 +29,7 @@ margin-left: 700px;;
   border-color: grey;
   border-width: 5px;
   width: 5%;
+  
 }
 
 #undertop{
@@ -43,4 +44,14 @@ width: 352px;
 height: 211px;
 left: 220px;
 top: 36px;
+}
+
+#mainbar{
+  position: absolute;
+width: 1452px;
+height: 282px;
+left: -12px;
+top: 0px;
+
+background: #B0FFE7;
 }
