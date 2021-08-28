@@ -10,32 +10,30 @@
   <body>
 
     <div class="flex mainbar" style="justify-content:space-evenly">
-      <div id="signintext" style="right:10%; "></div>
       <div>
         <img src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">
         
         <img src="/img/FindMyFood_TextTransparent.png" alt="" id="logo">
       </div>
       <div style="width:min-content;text-align:right">
-        <a href="/signin" id="addrestbtn"><button type="button" name="button" id="AddRestaurant_Button" class="button_main">Add Your Restaurant</button></a>
+        <a href="/addnew" id="addrestbtn"><button type="button" name="button" id="AddRestaurant_Button" class="button_main">Add Your Restaurant</button></a>
         <a href="/signin" id="signinbtn"><button type="button" name="button" id="SignIn_Button" class="button_main">Sign In / Register</button></a>
-        <button type="button" id="signoutbtn" class="button_main" onclick="localStorage.removeItem('lastname');refreshSignin()">Sign Out</button>
+        <div class="flex" style="width:max-content">
+          <div id="signintext" style="font-weight:bold;font-size:small;opacity:0.5"></div>
+          <button type="button" id="signoutbtn" class="button_main" onclick="localStorage.removeItem('lastname');refreshSignin()">Sign Out</button>
+        </div>
       </div>
-      <!--<a href="/signin"><button type="button" name="button" id="SignIn_Button">Sign In</button></a> -->
     </div>
 
     <!--<div id="mainbar_hr"></div>-->
     
     <div class="flex autocomplete" style="justify-content:center">
+        <div class="autocomplete">
         <input id="myInput" type="text" name="myCountry" placeholder="What food do you like?">
-        <input id="myInput2" type="text" name="myLocation" placeholder="Where are you at?">
-        <input type="submit">
+        </div><div class="autocomplete">
+        <input id="myInput2" type="text" name="myLocation" placeholder="Where are you?">
+        </div><input class="button_main" type="submit">
     </div>
-
-    <!--
-    <div id="signintext" style="right:10%; "></div>
-    <script src="/js/signin.js" defer></script>
-    -->
 
     <script src="/js/signin.js" defer></script>
     <script src="/js/search.js" defer></script>
