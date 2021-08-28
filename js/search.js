@@ -95,4 +95,5 @@ function autocomplete(inp, arr) {
   });
   } 
 
+  var countries = []
   autocomplete(document.getElementById("myInput"), countries);
