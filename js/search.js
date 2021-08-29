@@ -95,17 +95,17 @@ function autocomplete(inp, arr) {
   });
   } 
 
-  var countries = ['Pizza', 'pasta', 'lasgna', 'salad', 'chicken parmesan', 'breadsticks', 
-  'noodles', 'fried rice', 'dumplings', 
-  'bread', 'baguette', 'sandwich', 'sub', ' hoagie','bakery', 
-  'chinese', 'italian',
-   'sushi', 
-   'mexican', 'tacos', 'burrito', 'enchilada', 'tostadas', 'quesadilla', 'arroz con pollo', 'salsa',
-   'cake', 'ice-cream', 'brownie', 'cookies',  
-   'hamburger', 'american', 'french fries', 'hot dogs', 'cheeseburger', 'chicken sandwhich', 'fried chicken', 'steak', 
-   'indian', 'paneer', 'samosas', 'dosa', 'chicken tikka', 'chole', 'chili paneer',
-   'thai', 'tom kha soup', 'green curry', 'red curry', 'yellow curry', 'spring rolls', 'tofu', 'fried tofu',
-   'japanese', 'california rolls', 'wasabi']
+  var countries = ['Pizza', 'Pasta', 'Lasgna', 'Salad', 'Chicken parmesan', 'Breadsticks', 
+  'Noodles', 'Fried rice', 'Dumplings', 
+  'Bread', 'Baguette', 'Sandwich', 'Sub', 'Hoagie','Bakery', 
+  'Chinese', 'Italian',
+   'Sushi', 
+   'Mexican', 'Tacos', 'Burrito', 'Enchilada', 'Tostadas', 'Quesadilla', 'Arroz con pollo', 'Salsa',
+   'Cake', 'Ice-cream', 'Brownie', 'Cookies',  
+   'Hamburger', 'American', 'French fries', 'Hot dogs', 'Cheeseburger', 'Chicken sandwhich', 'Fried chicken', 'Steak', 
+   'Indian', 'Paneer', 'Samosas', 'Dosa', 'Chicken tikka', 'Chole', 'Chili paneer',
+   'Thai', 'Tom kha soup', 'Green curry', 'Red curry', 'Yellow curry', 'Spring rolls', 'Tofu', 'Fried tofu',
+   'Japanese', 'California rolls', 'Wasabi']
   autocomplete(document.getElementById("myInput"), countries);
 
   var countriesX = ['Markham, Ontario, Canada',

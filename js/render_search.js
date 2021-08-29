@@ -7,7 +7,7 @@ function render_Search(tag, loc, recommend, target) {
     target.style.display = 'block';
     target.innerHTML = `<h1 style="margin:0.25em 1em;text-align:center">Search Results</h1>`;
    
-    if (tag === 'Pizza' && loc === 'Downtown Toronto, Ontario, Canada') {
+    if ((tag === 'Bakery' || tag === 'Pizza') && loc === 'Downtown Toronto, Ontario, Canada') {
         target.innerHTML += `
         <a href="/restaurants/nino_x_home_page.html">
         <div class="card flex">
@@ -18,6 +18,7 @@ function render_Search(tag, loc, recommend, target) {
                 <div class="flex tagsWrp">
                     <div class="tags">Italian</div>
                     <div class="tags">Pizza</div>
+                    <div class="tags">Lasagna</div>
                     <div class="tags">Bakery</div>
                 </div>
                 <h5 style="margin:0.5em 0">Address:  1 Toro Rd, Toronto, ON M3J 2A4, CA</h5>
@@ -27,15 +28,17 @@ function render_Search(tag, loc, recommend, target) {
         </div>
         </a>
 
+        
+        <a href="https://bonjourbrioche.com/">
         <div class="card flex">
         <img src="/img/cover_bonjourbrioche.webp">
         <div style="width:calc(100% - 24em - 2em);margin:1em">
-            <h1 style="margin:0">PI CO</h1>
+            <h1 style="margin:0">Bonjour Brioche Bakery</h1>
             <h2 style="margin:0">Rating: ★★★✩✩</h2>
             <div class="flex tagsWrp">
                 <div class="tags">Italian</div>
                 <div class="tags">Pizza</div>
-                <div class="tags">Lasagna</div>
+                <div class="tags">Bakery</div>
             </div>
             <h5 style="margin:0.5em 0">Address:  Downtown Toronto, Ontario, Canada</h5>
             <h5 style="margin:0.5em 0">Phone: 1-800-692-7753</h5>

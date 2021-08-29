@@ -29,23 +29,23 @@
         <input type="text" class="input_main" id="tag"><br>
         
 
-        
-
-
         <label for="address">Address: </label>
         <input type="text" class="input_main" id="address"><br>
 
 
         <label for="telenum">Telephone Number: </label>
-        <input type="text" class="input_main" id="telenum"><br>
+        <input type="tel" class="input_main" id="telenum"><br>
 
 
         <label for="hours">Working Hours: </label>
-        <input type="text" class="input_main" id="hours"><br>
+        <input type="time" class="input_main" id="hours"> to <input type="time" class="input_main" id="hoursX"><br>
 
 
-        <label for="image_restuarant">Your company Image: </label>
-        <input type="file" class="input_main" accept="image/*"><br>
+        <label for="website">Website URL: </label>
+        <input type="url" class="input_main" id="website"><br>
+
+        <!--<label for="image_restuarant">Your company Image: </label>
+        <input type="file" class="input_main" accept="image/*"><br>-->
 
        
 
@@ -67,12 +67,36 @@ function preview_image(event)
  reader.readAsDataURL(event.target.files[0]);
 }
 
-var name_r = document.getElementById('name').value;
-    
+  function restaurant_tag(){
 
-  localStorage.setItem("restaurantname",name_r);
-  function restaurant_tag(tag){
+    var name_r = document.getElementById('name').value;
     
+    var jsonX = {};
+
+    jsonX.name = document.getElementById('name').value;
+    jsonX.tag = document.getElementById('tag').value;
+    jsonX.address = document.getElementById('address').value;
+    jsonX.number = document.getElementById('telenum').value;
+    jsonX.hours = document.getElementById('hours').value;
+    jsonX.hoursX = document.getElementById('hoursX').value;
+    jsonX.website = document.getElementById('website').value; 
+
+    if (localStorage.getItem("myRest") == null) {
+      localStorage.setItem("myRest", JSON.stringify([jsonX]))
+    } else {
+      var X = JSON.parse(localStorage.getItem("myRest"));
+      X.push(jsonX);
+      localStorage.setItem("myRest", JSON.stringify(X));
+    }
+
+  //localStorage.setItem("restaurantname", name_r);
+  //localStorage.setItem("restauranttag", document.getElementById('tag').value);
+  //localStorage.setItem("restaurantaddress", document.getElementById('address').value);
+  //localStorage.setItem("restaurantnumber", document.getElementById('telenum').value);
+  //localStorage.setItem("restauranthours", document.getElementById('hours').value);
+  //localStorage.setItem("restauranthoursX", document.getElementById('hoursX').value);
+  //localStorage.setItem("restaurantwebsite", document.getElementById('website').value);  
+
     alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
     window.location.href ="/profile/your_restaurants.html";
 
