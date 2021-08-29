@@ -43,20 +43,39 @@ function render_Search(tag, loc, recommend, target) {
                 <div class="tags">Hoagie</div>
                 <div class="tags">Sandwich</div>
             </div>
-            <h5 style="margin:0.5em 0">Address:  Downtown Toronto, Ontario, Canada</h5>
-            <h5 style="margin:0.5em 0">Phone: 1-800-692-7753</h5>
-            <h5 style="margin:0.5em 0">Hours: Closes 6 PM</h5>
+            <h5 style="margin:0.5em 0">Address:  812 Queen St E, Toronto, ON M4M 1H7, Canada</h5>
+            <h5 style="margin:0.5em 0">Phone: +1 416-406-1250</h5>
+            <h5 style="margin:0.5em 0">Hours: Closes 2 PM</h5>
+        </div>
+        </div>
+        </a>
+
+        <a href="/restaurants/bitondo_home_page.html">
+        <div class="card flex">
+        <img src="/img/bitondo.png">
+        <div style="width:calc(100% - 24em - 2em);margin:1em">
+            <h1 style="margin:0">Bitondo Pizzeria</h1>
+            <h2 style="margin:0">Rating: ★★★★★</h2>
+            <div class="flex tagsWrp">
+                <div class="tags">Pizza</div>
+                <div class="tags">Breadsticks</div>
+                <div class="tags">Bakery</div>
+                <div class="tags">Salad</div>
+                <div class="tags">Sandwich</div>
+            </div>
+            <h5 style="margin:0.5em 0">Address:  11 Clinton St, Toronto, ON M6J 2N7, Canada</h5>
+            <h5 style="margin:0.5em 0">Phone: +1 416-533-4101</h5>
+            <h5 style="margin:0.5em 0">Hours: Closes 11 PM</h5>
         </div>
         </div>
         </a>
 
 
-        <a href="/restaurants/bonjour_home_page.html">
-        <div class="card flex">
+        <!--<div class="card flex">
         <img src="/img/cover_bonjourbrioche.webp">
         <div style="width:calc(100% - 24em - 2em);margin:1em">
             <h1 style="margin:0">Bonjour Brioche Bakery</h1>
-            <h2 style="margin:0">Rating: ★★★✩✩</h2>
+            <h2 style="margin:0">Rating: ★★★★✩</h2>
             <div class="flex tagsWrp">
                 <div class="tags">Bread</div>
                 <div class="tags">Baguette</div>
@@ -67,10 +86,9 @@ function render_Search(tag, loc, recommend, target) {
             </div>
             <h5 style="margin:0.5em 0">Address:  Downtown Toronto, Ontario, Canada</h5>
             <h5 style="margin:0.5em 0">Phone: 1-800-692-7753</h5>
-            <h5 style="margin:0.5em 0">Hours: Closes 6 PM</h5>
+            <h5 style="margin:0.5em 0">Hours: Closes 9 PM</h5>
         </div>
-        </div>
-        </a>
+        </div>->
         `
 
         
