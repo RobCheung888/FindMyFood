@@ -16,8 +16,9 @@
 
   <div class="flex mainbar">
     <div>
-      <a href="/">
-        <img title="Return to Home" src="/img/poster_findmyfood.png" alt="" style="width:128px;height:128px;margin:16px" id="logo">
+      <a href="/" title="Return to Home">
+        <img src="/img/foodtarget_logo.png" alt="" style="width:128px;height:128px;margin:16px">        
+        <img src="/img/FindMyFood_TextTransparent.png" alt="" id="logo" style="width:128px;height:128px;margin:16px">
       </a>
     </div>
     <div style="width:min-content;text-align:right">
@@ -35,17 +36,17 @@
     </div>
   </div>
 
-  <!--<div id="mainbar_hr"></div>-->
-
   <div class="flex autocomplete" style="justify-content:center">
     <div class="autocomplete">
       <input id="myInput" type="text" name="myCountry" placeholder="What food do you like?">
     </div>
     <div class="autocomplete">
       <input id="myInput2" type="text" name="myLocation" placeholder="Where are you?">
-    </div><input class="button_main" type="submit">
+    </div>
+    <button class="button_main" type="button" onclick="render_Search(document.getElementById('myInput').value, document.getElementById('myInput2').value, document.getElementById('recommend'), document.getElementById('result'))">Search</button>
   </div>
 
+  <div id="recommend">
   <h1 style="margin:0.25em 1em;text-align:center">Today's Recommendations</h1>
 
   <div class="flex covercard">
@@ -53,14 +54,14 @@
     <a href="/restaurants/nino_x_home_page.html">
       <div class="card">
         <img src="/img/cover_pizza.jpg">
-        <h3>NinoX Bakery</h3>
+        <h3>Nino D'Aversa Bakery</h3>
         <div class="flex tagsWrp">
           <div class="tags">Italian</div>
           <div class="tags">Pizza</div>
           <div class="tags">Bakery</div>
         </div>
         <h5>🕙 Open til 7:00pm</h5>
-        <h5>📱 1-800-692-7753<h5>
+        <h5>📱 (416) 638-3271<h5>
       </div>
     </a>
 
@@ -108,9 +109,16 @@
 
 
   </div>
+  </div>
+
+  <div id="result">
+
+  </div>
+
 
   <script src="/js/signin.js" defer></script>
   <script src="/js/search.js" defer></script>
+  <script src="/js/render_search.js" defer></script>
 
 </body>
 

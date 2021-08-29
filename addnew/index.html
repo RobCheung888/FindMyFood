@@ -67,11 +67,11 @@ function preview_image(event)
  reader.readAsDataURL(event.target.files[0]);
 }
 
-
-  localStorage.setItem("restaurantname",name);
-  function restaurant_tag(tag){
-    var name_r = document.getElementById('name').value;
+var name_r = document.getElementById('name').value;
     
+
+  localStorage.setItem("restaurantname",name_r);
+  function restaurant_tag(tag){
     
     alert("Your restaurant name is " +name_r + ". \n" + "Click OK to go to your personal restaurant page.");
     window.location.href ="/profile/your_restaurants.html";

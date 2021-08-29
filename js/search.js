@@ -95,10 +95,59 @@ function autocomplete(inp, arr) {
   });
   } 
 
-  var countries = ['pizza', 'noodles','bread','bakery', 'chinese', 'italian', 'sushi', 'mexican', 'tacos', 'cake', 'hamburger', 'american', 'indian','thai']
+  var countries = ['Pizza', 'pasta', 'lasgna', 'salad', 'chicken parmesan', 'breadsticks', 
+  'noodles', 'fried rice', 'dumplings', 
+  'bread', 'baguette', 'sandwich', 'sub', ' hoagie','bakery', 
+  'chinese', 'italian',
+   'sushi', 
+   'mexican', 'tacos', 'burrito', 'enchilada', 'tostadas', 'quesadilla', 'arroz con pollo', 'salsa',
+   'cake', 'ice-cream', 'brownie', 'cookies',  
+   'hamburger', 'american', 'french fries', 'hot dogs', 'cheeseburger', 'chicken sandwhich', 'fried chicken', 'steak', 
+   'indian', 'paneer', 'samosas', 'dosa', 'chicken tikka', 'chole', 'chili paneer',
+   'thai', 'tom kha soup', 'green curry', 'red curry', 'yellow curry', 'spring rolls', 'tofu', 'fried tofu',
+   'japanese', 'california rolls', 'wasabi']
   autocomplete(document.getElementById("myInput"), countries);
 
-  var countriesX = ['Markham, Ontario', 'Downtown Toronto, Ontario', 'Kowloon Tong, Hong Kong', 'Sanford, Florida, US', 'Taipei', 'Tokyo']
+  var countriesX = ['Markham, Ontario, Canada',
+   'Downtown Toronto, Ontario, Canada',
+   'Vancouver, British Columbia, Canada', 
+   'Montreal, Quebec',
+   'Victoria, British Columbia, Canada', 
+  'Quebec City, Quebec, Canada',
+    'Calgary, Alberta, Canada',
+    'Ottowa, Ontario, Canada',
+
+   'Kowloon Tong, Hong Kong',
+   'Tsuen Wan, Hong Kong', 
+   'Shatin, Hong Kong',
+   'Sok Kwu Wan, Hong Kong',
+   
+   'Atlanta, Georgia, United States of America',
+   'Alpharetta, Georgia, United States of America',
+   'Orlando, Florida, United States of America', 
+   'Miami, Florida, United States of America',
+   'Tampa, Florida, United States of America',
+   'Houston, Texas, United States of America',
+   'Austin, Texas, United States of America',
+   'Los Angeles, California, United States of America',
+   'San Diego, California, United States of America',
+   'Sacramento, California, United States of America',
+   'Seattle, Washington, United States of America',
+   'Washington DC, United States of America',
+   'New York City, New York, United States of America',
+   'Boston, Massachussetts, United States of America',
+   'Chicago, Illinois, United States of America',
+   'Phoenix, Arizona, United States of America',
+   'Ann Arbor, Michigan, United States of America',
+   'Detroit, Michigan, United States of America',
+   'St. Louis, Missouri, United States of America',
+   'Nashville, Tennessee, United States of America',
+   'Sanford, Florida, United States of America', 
+   'Philadelphia, Pennsylvania, United States of America',
+   'Brooklyn, New York, United States of America',
+   'Urbana Champaign, Illinois, United States of America',
+   'Taipei City, Taiwan', 
+   'Tokyo, Japan']
   autocomplete(document.getElementById("myInput2"), countriesX);
 
   //https://www.w3schools.com/howto/howto_js_autocomplete.asp
