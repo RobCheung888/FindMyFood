@@ -29,22 +29,48 @@ function render_Search(tag, loc, recommend, target) {
         </a>
 
         
-        <a href="https://bonjourbrioche.com/">
+        <a href="/restaurants/bonjour_home_page.html">
         <div class="card flex">
         <img src="/img/cover_bonjourbrioche.webp">
         <div style="width:calc(100% - 24em - 2em);margin:1em">
             <h1 style="margin:0">Bonjour Brioche Bakery</h1>
             <h2 style="margin:0">Rating: ★★★✩✩</h2>
             <div class="flex tagsWrp">
-                <div class="tags">Italian</div>
-                <div class="tags">Pizza</div>
+                <div class="tags">Bread</div>
+                <div class="tags">Baguette</div>
                 <div class="tags">Bakery</div>
+                <div class="tags">Sub</div>
+                <div class="tags">Hoagie</div>
+                <div class="tags">Sandwich</div>
             </div>
             <h5 style="margin:0.5em 0">Address:  Downtown Toronto, Ontario, Canada</h5>
             <h5 style="margin:0.5em 0">Phone: 1-800-692-7753</h5>
             <h5 style="margin:0.5em 0">Hours: Closes 6 PM</h5>
         </div>
-    </div>
+        </div>
+        </a>
+
+
+        <a href="/restaurants/bonjour_home_page.html">
+        <div class="card flex">
+        <img src="/img/cover_bonjourbrioche.webp">
+        <div style="width:calc(100% - 24em - 2em);margin:1em">
+            <h1 style="margin:0">Bonjour Brioche Bakery</h1>
+            <h2 style="margin:0">Rating: ★★★✩✩</h2>
+            <div class="flex tagsWrp">
+                <div class="tags">Bread</div>
+                <div class="tags">Baguette</div>
+                <div class="tags">Bakery</div>
+                <div class="tags">Sub</div>
+                <div class="tags">Hoagie</div>
+                <div class="tags">Sandwich</div>
+            </div>
+            <h5 style="margin:0.5em 0">Address:  Downtown Toronto, Ontario, Canada</h5>
+            <h5 style="margin:0.5em 0">Phone: 1-800-692-7753</h5>
+            <h5 style="margin:0.5em 0">Hours: Closes 6 PM</h5>
+        </div>
+        </div>
+        </a>
         `
 
         
